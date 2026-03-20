@@ -30,24 +30,24 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="core.cpp">
-      <Filter>Archivos de origen\core</Filter>
-    </ClCompile>
-    <ClCompile Include="windowHandler.cpp">
-      <Filter>Archivos de origen\core</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\core.cpp">
+      <Filter>Archivos de origen\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\windowHandler.cpp">
+      <Filter>Archivos de origen\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="core.h">
+    <ClInclude Include="src\core\core.h">
       <Filter>Archivos de encabezado\core</Filter>
     </ClInclude>
-    <ClInclude Include="windowHandler.h">
+    <ClInclude Include="src\core\windowHandler.h">
       <Filter>Archivos de encabezado\core</Filter>
     </ClInclude>
-    <ClInclude Include="game_config.h">
+    <ClInclude Include="src\game_config.h">
       <Filter>Archivos de encabezado\game\config</Filter>
     </ClInclude>
   </ItemGroup>

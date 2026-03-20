@@ -71,16 +71,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ExternalIncludePath>C:\SDL3-3.4.2\include;D:\DEVELOPMENTS\GAMES\SDL Engine\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>D:\DEVELOPMENTS\GAMES\SDL Engine\include;C:\SDL3-3.4.2\include;C:\Users\M93p\Downloads\glm-1.0.3\glm;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ExternalIncludePath>C:\SDL3-3.4.2\include;D:\DEVELOPMENTS\GAMES\SDL Engine\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>D:\DEVELOPMENTS\GAMES\SDL Engine\include;C:\SDL3-3.4.2\include;C:\Users\M93p\Downloads\glm-1.0.3\glm;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ExternalIncludePath>C:\SDL3-3.4.2\include;D:\DEVELOPMENTS\GAMES\SDL Engine\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>D:\DEVELOPMENTS\GAMES\SDL Engine\include;C:\SDL3-3.4.2\include;C:\Users\M93p\Downloads\glm-1.0.3\glm;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ExternalIncludePath>C:\SDL3-3.4.2\include;D:\DEVELOPMENTS\GAMES\SDL Engine\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>D:\DEVELOPMENTS\GAMES\SDL Engine\include;C:\SDL3-3.4.2\include;C:\Users\M93p\Downloads\glm-1.0.3\glm;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -147,15 +147,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="core.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="windowHandler.cpp" />
+    <ClCompile Include="src\core\core.cpp" />
+    <ClCompile Include="src\core\windowHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="core.h" />
-    <ClInclude Include="game_config.h" />
-    <ClInclude Include="windowHandler.h" />
+    <ClInclude Include="src\core\core.h" />
+    <ClInclude Include="src\core\windowHandler.h" />
+    <ClInclude Include="src\game_config.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

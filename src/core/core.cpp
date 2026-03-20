@@ -1,5 +1,6 @@
 #include "core.h"
-#include "game_config.h"
+#include "../game_config.h"
+
 
 void SystemClass::initSystem() {
 

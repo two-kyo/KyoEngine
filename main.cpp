@@ -1,5 +1,5 @@
 #include <glad/glad.h>
-#include "core.h"
+#include "src/core/core.h"
 #include <SDL3/SDL.h>      
 #include <SDL3/SDL_main.h>
 
@@ -19,7 +19,6 @@ int main(int argc, char* argv[]) {
             }
         }
 
-		glClearColor(0.5f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		system.ventana.swapBuffers(system.ventanon);
