@@ -39,6 +39,9 @@
     <ClCompile Include="src\core\windowHandler.cpp">
       <Filter>Archivos de origen\core</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\renderer.cpp">
+      <Filter>Archivos de origen\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\core\core.h">
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="src\game_config.h">
       <Filter>Archivos de encabezado\game\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\renderer.h">
+      <Filter>Archivos de encabezado\core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -12,6 +12,8 @@ int windowHandler::initialize(const char* title, int width, int height, SDL_Wind
 
 	window = SDL_CreateWindow(title, width, height, SDL_WINDOW_OPENGL);
 
+	SDL_SetWindowResizable(window, false);
+
 	if (window == NULL) {
 		SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Could not create window: %s\n", SDL_GetError());
 		return 1;
