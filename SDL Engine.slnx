@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SDL Engine.vcxproj" Id="a6e20c4a-3112-4d26-a3ed-43838232f856" />
+</Solution>
