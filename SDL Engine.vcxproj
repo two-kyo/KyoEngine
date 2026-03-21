@@ -151,11 +151,13 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\core\core.cpp" />
     <ClCompile Include="src\core\renderer.cpp" />
+    <ClCompile Include="src\core\stb_image.cpp" />
     <ClCompile Include="src\core\windowHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\core\core.h" />
     <ClInclude Include="src\core\renderer.h" />
+    <ClInclude Include="src\core\stb_image.h" />
     <ClInclude Include="src\core\windowHandler.h" />
     <ClInclude Include="src\game_config.h" />
   </ItemGroup>

@@ -12,8 +12,9 @@ int main(int argc, char* argv[]) {
     bool done = false;
 
     float playerx, playery;     //prototype stuff
-	playerx = playery = 320.0f;     //prototype stuff
+	playerx = playery = 0.0f;     //prototype stuff
     Uint64 lastTime = SDL_GetTicks();
+    unsigned int playerTexture = system.rendererer.loadTexture("player.png");
     while (!done) {
 
         Uint64 currentTime = SDL_GetTicks();
@@ -36,11 +37,10 @@ int main(int argc, char* argv[]) {
         if (keys[SDL_SCANCODE_RIGHT]) playerx += speed; //prototype stuff
 
 
-        glClearColor(0.5f,0.0f,0.0f,1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
-        system.rendererer.drawRect(playerx, playery, 15.0f, 15.0f, 0.0f, 1.0f, 0.0f);   //prototype stuff
-
+        system.rendererer.drawRect(playerTexture,playerx, playery, 96.0f, 97.0f, 1.0f, 1.0f, 1.0f);   //prototype stuff
 		system.ventana.swapBuffers(system.ventanon);
 
     }

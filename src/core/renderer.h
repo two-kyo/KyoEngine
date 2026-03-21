@@ -11,12 +11,13 @@ private:
 
 	void compileShaders();
 	void setupSquad();
+	
 
 public:
 	void init(float width, float height);
 	void cleanup();
-
-	void drawRect(float x, float y, float width, float height, float r, float g, float b);
+	unsigned int loadTexture(const char* path);
+	void drawRect(unsigned int textureID,float x, float y, float width, float height, float r, float g, float b);
 };
 
 #endif
