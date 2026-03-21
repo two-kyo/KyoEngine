@@ -24,6 +24,7 @@
     <ProjectGuid>{a6e20c4a-3112-4d26-a3ed-43838232f856}</ProjectGuid>
     <RootNamespace>SDLEngine</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>kyoEngine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
