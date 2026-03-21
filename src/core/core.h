@@ -2,6 +2,7 @@
 #define _CORE_H
 #include "windowHandler.h"
 #include "renderer.h"
+#include "InputHandler.h"
 #include <iostream>
 
 class SystemClass {
@@ -13,6 +14,7 @@ public:
 	windowHandler ventana;
 	SDL_Window* ventanon = nullptr;
 	rendererClass rendererer;
+	Input input;
 };
 
 #endif
