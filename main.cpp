@@ -12,7 +12,8 @@ int main(int argc, char* argv[]) {
     system.initSystem();
 
     bool done = false;
-    float rotationAngle = 0.0f;
+    float rotationAngleX = 0.0f;
+    float rotationAngleY = 0.0f;
 	unsigned int playertext = system.rendererer.loadTexture("player.png");
     while (!done) {
 
@@ -22,18 +23,31 @@ int main(int argc, char* argv[]) {
                 done = true;
             }
         }
-        rotationAngle += 0.01f;
         system.input.update();
 
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-        system.rendererer.drawRect(playertext,0.0f,0.0f,96.0f,87.0f,1.0f,1.0f,1.0f);
+        if (system.input.isActionPressed("Right")) {
+			rotationAngleX += 0.1f;
+        }
+        if (system.input.isActionPressed("Up")) {
+			rotationAngleY -= 0.1f;
+        }
+        if (system.input.isActionPressed("Left")) {
+			rotationAngleX -= 0.1f;
+        }
+        if (system.input.isActionPressed("Down")) {
+			rotationAngleY += 0.1f;
+        }
+
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+
+        system.rendererer.drawRect(playertext,0.0f,0.0f,0.0f,0.0f,1.0f,1.0f,1.0f);
 
         system.rendererer.drawCube(
             playertext,
             glm::vec3(0.0f, 0.0f, -3.0f),       // Position
-            glm::vec3(rotationAngle, rotationAngle * 0.5f, 0.0f), // Rotation
+            glm::vec3(rotationAngleY, rotationAngleX * 0.5f, 0.0f), // Rotation
             glm::vec3(1.0f, 1.0f, 1.0f)         // Scale
         );
 
